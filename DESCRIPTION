@@ -1,0 +1,16 @@
+Package: StatComp22003
+Type: Package
+Title: StatComp Project by 22003
+Version: 1.0
+Date: 2022-11-28
+Author: Jiaqiang Li
+Maintainer: Jiaqiang Li <ljq1492@mail.ustc.edu.cn>
+Description: A package using Rcpp to build a random split tree for classifier.
+License: GPL (>= 2)
+Imports: Rcpp,knitr,kableExtra,stats,boot,microbenchmark,rmarkdown,carData,bootstrap,DAAG
+LinkingTo: Rcpp
+RoxygenNote: 7.2.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: http://github.com/ljq1492/StatComp22003
+BugReports: http://github.com/ljq1492/StatComp22003/issues
