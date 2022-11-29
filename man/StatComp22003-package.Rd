@@ -17,10 +17,6 @@ Jiaqiang Li.
 
 Maintainer: Jiaqiang Li <ljq1492@mail.ustc.edu.cn>
 }
-\references{
-  This optional section can contain literature or other references for
-  background information.
-}
-\keyword{ package }
+
 
 
