@@ -142,7 +142,7 @@ int tree_predict(List node_info, NumericVector x_test){
 
 ```
 
-The R code for building a deterministic tree with data 'iris' is as follows. (Choosing the parameters in _tree_create_ as \code{q} equals the dimensions of \code{x} and \code{random_split=F}). 
+The R code for building a deterministic tree with data 'iris' is as follows. (Choosing the parameters in _tree_create_ as q equals the dimensions of x and  random_split=F). 
 
 ```{r,eval=TRUE}
 data(iris)
@@ -175,7 +175,7 @@ cat("The test accuracy is\n")
 mean(test_pre==iris_label[te_ind])
 ```
 
-The R code for building a random split tree is as follows. (Choosing the parameters in _tree_create_ as \code{q} less than the dimensions of \code{x} and \code{random_split=T}). 
+The R code for building a random split tree is as follows. (Choosing the parameters in _tree_create_ as q less than the dimensions of x and random_split=T). 
 
 ```{r}
 # Generate simulation data
