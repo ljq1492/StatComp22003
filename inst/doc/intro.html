@@ -477,8 +477,8 @@ stop the partitioning process if the terminal nodes are too small.</p>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (ans);</span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>The R code for building a deterministic tree with data ‘iris’ is as
-follows. (Choosing the parameters in <em>tree_create</em> as equals the
-dimensions of and ).</p>
+follows. (Choosing the parameters in <em>tree_create</em> as q equals the
+dimensions of x and random_split=F).</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>iris_data <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(iris[,<span class="sc">-</span><span class="dv">5</span>])</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>iris_label <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(iris[,<span class="dv">5</span>])</span>
@@ -641,8 +641,8 @@ accuracy.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(test_pre<span class="sc">==</span>iris_label[te_ind])</span></code></pre></div>
 <pre><code>## [1] 1</code></pre>
 <p>The R code for building a random split tree is as follows. (Choosing
-the parameters in <em>tree_create</em> as less than the dimensions of
-and ).</p>
+the parameters in <em>tree_create</em> as q less than the dimensions of
+x and random_split=F).</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate simulation data</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">50</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="dv">400</span></span>
